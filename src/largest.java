@@ -34,9 +34,19 @@ public class largest {
                     System.out.println(num + " is a prime number.");
                 else
                     System.out.println(num + " is not a prime number.");
+                break;
+            case 4:
+                System.out.println("enter the num");
+                num=sc.nextInt();
+                if(num%2==0)
+                    System.out.println("num is even");
+                else
+                    System.out.println("num is not even");
 
+                break;
         }
     }
+
 
 
         }
