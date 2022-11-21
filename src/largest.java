@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class largest {
     public static void main(String[] args) {
-        int a,b,c,largest,smallest,option=0;
+        int a,b,c,largest,smallest,option=0,num;
         Scanner sc=new Scanner(System.in);
         System.out.println("enter the first number");
         a=sc.nextInt();
@@ -19,9 +19,27 @@ public class largest {
             case 2:
                 System.out.println(smallest=c<(a<b?a:b)?c:((a<b)? a:b));
             break;
-            default:
-                System.out.println("invalid");
+            case 3:
+                System.out.println("enter the num");
+                 num=sc.nextInt();
+                boolean flag = false;
+                for (int i = 2; i <= num / 2; ++i) {
+                    if (num % i == 0) {
+                        flag = true;
+                        break;
+                    }
+                }
+
+                if (!flag)
+                    System.out.println(num + " is a prime number.");
+                else
+                    System.out.println(num + " is not a prime number.");
+
+        }
+    }
+
+
         }
 
-    }
-}
+
+
